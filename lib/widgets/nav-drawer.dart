@@ -18,10 +18,10 @@ class NavDrawer extends StatelessWidget {
             ),
           ),
           ListTile(
-            title: const Text(
-              'Pokemons',
-              style: TextStyle(color: Colors.black, fontSize: 30),
-            ),
+            leading: Icon(Icons.star),
+            title: Text("Pokemons"),
+            subtitle: Text("Minha Pokedex"),
+            trailing: Icon(Icons.arrow_forward),
             onTap: () => {
               Navigator.pushNamed(
                 context,
@@ -31,10 +31,10 @@ class NavDrawer extends StatelessWidget {
           ),
           const Divider(),
           ListTile(
-            title: const Text(
-              'Tipos',
-              style: TextStyle(color: Colors.black, fontSize: 30),
-            ),
+            leading: Icon(Icons.star),
+            title: Text("Tipos"),
+            subtitle: Text("Tipos de Pokemon"),
+            trailing: Icon(Icons.arrow_forward),
             onTap: () => {
               Navigator.pushNamed(
                 context,
@@ -44,10 +44,10 @@ class NavDrawer extends StatelessWidget {
           ),
           const Divider(),
           ListTile(
-            title: const Text(
-              'Habilidades',
-              style: TextStyle(color: Colors.black, fontSize: 30),
-            ),
+            leading: Icon(Icons.star),
+            title: Text("Habilidade"),
+            subtitle: Text("Habilidades dos Pokemon"),
+            trailing: Icon(Icons.arrow_forward),
             onTap: () => {
               Navigator.pushNamed(
                 context,
@@ -57,10 +57,10 @@ class NavDrawer extends StatelessWidget {
           ),
           const Divider(),
           ListTile(
-            title: const Text(
-              'Movimentos',
-              style: TextStyle(color: Colors.black, fontSize: 30),
-            ),
+            leading: Icon(Icons.star),
+            title: Text("Movimentos"),
+            subtitle: Text("Movimentos dos Pokemon"),
+            trailing: Icon(Icons.arrow_forward),
             onTap: () => {
               Navigator.pushNamed(
                 context,
@@ -70,14 +70,14 @@ class NavDrawer extends StatelessWidget {
           ),
           const Divider(),
           ListTile(
-            title: const Text(
-              'Items',
-              style: TextStyle(color: Colors.black, fontSize: 30),
-            ),
+            leading: Icon(Icons.star),
+            title: Text("Item"),
+            subtitle: Text("Item dos Pokemon"),
+            trailing: Icon(Icons.arrow_forward),
             onTap: () => {
               Navigator.pushNamed(
                 context,
-                "/item",
+                "/type",
               )
             },
           ),
